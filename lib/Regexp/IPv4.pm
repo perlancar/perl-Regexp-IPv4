@@ -25,6 +25,10 @@ $IPv4_re = qr/$IPv4_re/;
 
 =head1 DESCRIPTION
 
+The regex only recognizes the quad-dotted notation of four decimal integers,
+ranging from 0 to 255 each. Other notations like 32-bit hexadecimal number (e.g.
+0xFF0000) or shortened dotted notation (e.g. 255.0.0) are not recognized.
+
 If you do not use anchor, beware of cases like:
 
  "255.255.255.256" =~ /($IPv4_re)/; # true & capture "255.255.255.25"
