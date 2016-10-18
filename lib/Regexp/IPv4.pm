@@ -18,7 +18,7 @@ $IPv4_re = qr/$IPv4_re/;
 
 =head1 SYNOPSIS
 
- use Regexp::IPvv qw($IPvv_re);
+ use Regexp::IPv4 qw($IPv4_re);
 
  $address =~ /^$IPv4_re$/ and print "IPv4 address\n";
 
